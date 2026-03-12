@@ -14,4 +14,4 @@ jobs:
          FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
         uses: actions/checkout@v4
       - name: Run PowerShell script
-        run:  $GITHUB_WORKSPACE\UnfollowTest1.ps1
+        run: $GITHUB_WORKSPACE/UnfollowTest1.ps1
