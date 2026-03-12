@@ -1,0 +1,18 @@
+name: Scheduled PowerShell Job
+
+on:
+  schedule:
+    - cron: "0 23 15 ? * SUN *"
+  workflow_dispatch:      # also allow manual trigger
+
+jobs:
+  run-powershell:
+    runs-on: windows-latest  # Windows Server runner
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Run PowerShell script
+        shell: pwsh
+        run: |
+          ./UnfollowTest.ps1
