@@ -4,7 +4,8 @@ on:
   schedule:
     - cron: "48 16 * * 0/6"
   workflow_dispatch:      # also allow manual trigger
-
+  working-directory: .
+  
 jobs:
   run-powershell:
     runs-on: windows-latest  # Windows Server runner
@@ -12,5 +13,5 @@ jobs:
       - name: Checkout repo        
         uses: actions/checkout@v1
       - name: Run PowerShell script
-        run: ${{ github.workspace }}\UnfollowTest1.ps1
+        run: \UnfollowTest1.ps1
         shell: pwsh
