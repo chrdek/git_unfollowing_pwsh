@@ -13,8 +13,7 @@ jobs:
         env:
           FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
         uses: actions/checkout@v4
-
       - name: Run PowerShell script
         shell: pwsh
         run: |
-          .\UnfollowTest1.ps1
+          UnfollowTest1.ps1
