@@ -10,7 +10,7 @@ jobs:
     runs-on: windows-latest  # Windows Server runner
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v4
+        uses: actions/checkout@v3
 
       - name: Run PowerShell script
         shell: pwsh
