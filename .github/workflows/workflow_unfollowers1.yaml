@@ -9,6 +9,8 @@ jobs:
   run-powershell:
     runs-on: windows-latest  # Windows Server runner
     steps:
+      - name: Checkout repo        
+        uses: actions/checkout@v1
       - name: Run PowerShell script
         shell: pwsh
         run: ./UnfollowTest1.ps1
