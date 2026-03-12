@@ -12,5 +12,4 @@ jobs:
       - name: Checkout repo        
         uses: actions/checkout@v1
       - name: Run PowerShell script
-        run: '${{ github.workspace }}\UnfollowTest1.ps1'
-        shell: pwsh
+        run: powershell .\UnfollowTest1.ps1
