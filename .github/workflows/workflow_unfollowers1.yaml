@@ -13,4 +13,4 @@ jobs:
         uses: actions/checkout@v1
       - name: Run PowerShell script
         shell: pwsh
-        run: "$PSScriptRoot\UnfollowTest1.ps1"
+        run: .\UnfollowTest1.ps1
