@@ -4,14 +4,14 @@ on:
   schedule:
     - cron: "48 16 * * 0/6"
   workflow_dispatch:      # also allow manual trigger
-    env:
-      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 jobs:
   run-powershell:
     runs-on: windows-latest  # Windows Server runner
     steps:
       - name: Checkout repo
+        env:
+          FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
         uses: actions/checkout@v4
 
       - name: Run PowerShell script
