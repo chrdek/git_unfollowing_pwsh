@@ -17,4 +17,4 @@ jobs:
       - name: Run PowerShell script
         shell: pwsh
         run: |
-          ./UnfollowTest1.ps1
+          .\UnfollowTest1.ps1
