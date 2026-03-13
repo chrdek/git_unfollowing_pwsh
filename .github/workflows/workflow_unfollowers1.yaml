@@ -8,6 +8,8 @@ on:
 jobs:
   run-powershell:
     runs-on: windows-latest  # Windows Server runner
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
     steps:
       - name: Checkout repo        
         uses: actions/checkout@v4
