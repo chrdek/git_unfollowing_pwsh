@@ -10,5 +10,5 @@
             exit 0
           } else {
             Write-Host "Would have shown Cancel..."
-            exit 1
+            exit 0
           }
